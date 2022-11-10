@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    <center>
+        <h2> Update a post</h2>
+    </center>
+    <div class="form">
+        <form action="/post/{{post.id}}/" method="POST">
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" value="">
+
+            <label for="title">Username</label>
+            <input type="text" name="title" id="title" value="">
+
+
+            <label for="content">Username</label>
+            <input type="text" name="content" id="content" value="">
+            <br>
+            <br>
+            <br>
+        <button>Update</button>
+
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+
+</body>
+{% endblock content %}
